@@ -1,0 +1,19 @@
+<div class="albumSheet">
+    {{#if albums}}
+    <h3>Albums of {{artist}}</h3>
+        {{#each albums}} 
+            
+            <div class="albumBox">
+                <div>
+                    <a href='/tracks/'{{id}}> <img src="{{this.images.2.url}}" class="albumPic"> </a>
+               </div>
+                <div>
+                    <a href='/tracks/{{id}}'>{{this.name}}</a>
+                </div>
+            </div>
+            
+        {{/each}}
+    {{else}}
+    <h3>This Artist has no albums</h3>
+    {{/if}}
+</div>

@@ -1,0 +1,37 @@
+<section class="container-fluid imprint-wrapper big-gap" >
+<div class="content col-6">
+
+<div>
+<h1>Admin Page</h1>
+<br>
+<h2>Add Show</h2>
+</div>
+  <form action="/admin/createshow" method="post">
+<div class="inputForm">
+<div class = "labelDiv">
+
+    <label> Date </label><br>
+        <input type="date" class="formInput" name="date"><br>
+</div>
+<br>
+<div class = "labelDiv">
+    <label> Available Seating </label><br>
+        <input type="text" class="formInput" name="venueSeating" placeholder="default value 42"><br>
+</div>
+<br>
+<div class = "labelDiv"></div>
+    <label for="movie-select"> Select Movie </label><br>
+    <select name="movie" id="movie-select">
+        <option value="">--Please choose an option--</option>
+        {{#each film}}
+        date {{date}}
+        <option value={{id}}>{{title}}:{{year}}</option>
+        {{/each}}
+    </select><br>
+</div>
+<br>
+<button class="addDB pt-20" type="submit">Add Show Schedule</button>
+</form>
+<br>
+</div>
+</section>  

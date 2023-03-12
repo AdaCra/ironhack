@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,900;1,300&family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CDN Min Version CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- Carrousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />    
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <div class="navbar-wrapper">
+            <div class="logo">
+                <a href="/">
+                    <div id="text">
+                             <span class="blink">IRON <span id="broke-light">CINE</span>MA</span>
+                    </div>
+                </a>
+             </div>
+            <div class="login">
+                {{#username}}
+                    {{body}}
+                {{/username}}
+            </div>
+    </nav>
+
+      
+       
+   
+    {{{body}}}
+    <footer>
+        <div class="footer-wrapper">
+            <div class="left">
+                <div class="footer-information">
+                    <div class="logo"> IRON CINEMA</div>
+                    <div class="location"> <a href="/contact">Storkower Str. 132, 10407 Berlin</a></div>
+                    <div class="phone nr"> +49 15259796413</div>
+                </div>
+                <div class="footer-nav-information">
+                    <ul>
+                        <li><a href="/terms">Terms of use</a></li>
+                       <li><a href="/contact">Contact us</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/imprint">Imprint</a></li>
+                        <li><a href="/map">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+       
+            <div class="right">
+            {{#GODMODE}}
+                {{body}}
+            {{/GODMODE}}
+             <div class="icon-container">
+                <div>Accepted payment methods:
+                    <div class="payment-icon-wrapper">
+                    <span class ='payment-icon'><a href="https://usa.visa.com/" target="_blank"><img src="/images/image 4.png" alt="visaImage"></a></span>
+                    <span class ='payment-icon'><a href="https://www.mastercard.com/global/en.html" target="_blank"><img src="/images/image 5.png" alt="masterImage"></a></span>
+                    <span class ='payment-icon'><a href="https://www.paypal.com/" target="_blank"><img src="/images/image 6.png" alt="paypalImage"></a></span>
+                    <span class ='payment-icon'><a href="https://www.sofort.com/" target="_blank"><img src="/images/image 7.png" alt="sofortImage"></a></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Bootstrap 5 CDN Min Version JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Carrousel -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script src="https://unpkg.com/flickity-hash@1.0.3/hash.js"></script>
+<!-- Custom  Javascript-->
+ <script src="/js/script.js"></script>
+</html>
